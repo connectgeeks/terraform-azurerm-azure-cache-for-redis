@@ -132,7 +132,7 @@ data "azurerm_virtual_network" "vnet01" {
 
 data "azurerm_subnet" "snet-ep-exist" {
   count               = var.create_subnet ? 0 : 1
-  name                = "amaiz-prod-app-ded-data-snet-01"
+  name                = "connectgeeks-develop-snet-01"
   virtual_network_name = data.azurerm_virtual_network.vnet01.0.name
   resource_group_name  = local.resource_group_name
 }

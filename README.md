@@ -188,7 +188,7 @@ For recommendations on how to implement a tagging strategy, see Resource naming 
 > Tag names are case-insensitive for operations. A tag with a tag name, regardless of the casing, is updated or retrieved. However, the resource provider might keep the casing you provide for the tag name. You'll see that casing in cost reports. **Tag values are case-sensitive.**
 >
 
-An effective naming convention assembles resource names by using important resource information as parts of a resource's name. For example, using these [recommended naming conventions](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging#example-names), a public IP resource for a production SharePoint workload is named like this: `pip-sharepoint-prod-westus-001`.
+An effective naming convention assembles resource names by using important resource information as parts of a resource's name. For example, using these [recommended naming conventions](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging#example-names), a public IP resource for a production SharePoint workload is named like this: `pip-sharepoint-develop-westus-001`.
 
 ## Requirements
 
@@ -247,9 +247,24 @@ An effective naming convention assembles resource names by using important resou
 `redis_cache_private_endpoint_ip`|Redis Cache server private endpoint IPv4 Addresses
 `redis_cache_private_endpoint_fqdn`|Redis Cache server private endpoint FQDN Addresses
 
-## Resource Graph
+## Repository Tree
 
-![Resource Graph](graph.png)
+├── LICENSE
+├── README.md
+├── examples
+│   ├── Azure_Cache_for_Redis_Cluster
+│   │   ├── main.tf
+│   │   ├── output.tf
+│   │   └── variables.tf
+│   └── Azure_Cache_for_Redis_Virtual_Network 
+│       ├── main.tf
+│       ├── output.tf
+│       ├── terraform.tfvars
+│       └── variables.tf
+├── main.tf
+├── output.tf
+├── variables.tf
+└── versions.tf
 
 ## Authors
 
