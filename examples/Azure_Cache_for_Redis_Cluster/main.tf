@@ -1,5 +1,5 @@
 module "redis" {
-  source  = "connectgeeks/redis/azurerm"
+  source  = "connectgeeks/azure-cache-for-redis/azurerm"
   version = "3.0.0"
 
   # By default, this module will create a resource group

@@ -1,5 +1,5 @@
 module "redis" {
-  source  = "connectgeeks/terraform-azurerm-azure-cache-for-redis"
+  source  = "connectgeeks/azure-cache-for-redis/azurerm"
   version = "3.0.0"
 
   # By default, this module will create a resource group
