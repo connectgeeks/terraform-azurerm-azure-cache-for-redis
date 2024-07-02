@@ -7,7 +7,7 @@ module "redis" {
   # to `create_resource_group = false` if you want to existing resoruce group. 
   # If you use existing resrouce group location will be the same as existing RG.
   create_resource_group = false
-  resource_group_name   = "amaiz-prod-app-dedicated-6a5e82-rg"
+  resource_group_name   = "connectgeeks-develop-73h82-rg"
   location              = "southcentralus"
 
   # Configuration to provision a Standard Redis Cache
@@ -51,7 +51,8 @@ module "redis" {
   # Tags for Azure Resources
   tags = {
     Terraform   = "true"
-    Environment = "dev"
-    Owner       = "test-user"
+    Environment = "development"
+    Owner       = "connectgeeks"
+    URL         = "https://github.com/connectgeeks"
   }
 }
